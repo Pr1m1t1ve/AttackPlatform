@@ -33,7 +33,7 @@ class recon():
 
         return
 
-    def portScan(self):
+    def bannerPull(self):
         host = input("\033[31m[+]\033[36m IP Address: ")
         port = input("\033[31m[+]\033[36m Port: ")
         s = socket.socket()
@@ -69,7 +69,7 @@ class recon():
         elif habib == 2:
             system('clear')
             print(banner)
-            recon.portScan(self)
+            recon.bannerPull(self)
         elif habib == 3:
             system('clear')
             print(banner)
